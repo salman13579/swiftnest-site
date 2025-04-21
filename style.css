@@ -1,85 +1,59 @@
-
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f5f5f5;
-  color: #1a1a1a;
+  padding: 0;
+  background: #f4f4f4;
 }
 header {
-  background: #003366;
+  background: #333;
   color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-.logo-text {
-  font-size: 1rem;
-}
-.logo-text strong {
-  font-size: 1.2rem;
-}
-.logo-text span {
-  font-size: 0.75rem;
-  font-weight: 400;
+  padding: 1em;
+  text-align: center;
 }
 nav a {
+  margin: 0 1em;
   color: white;
-  margin-left: 1.5rem;
   text-decoration: none;
-  font-weight: 500;
 }
 .hero {
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 .hero img {
   width: 100%;
-  height: auto;
+  max-height: 400px;
+  object-fit: cover;
 }
 .hero-text {
   position: absolute;
-  top: 20%;
-  left: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
-.hero-text h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+.services-list, .testimonials, .about, .contact-form {
+  padding: 2em;
 }
-.hero-text ul {
-  list-style: none;
-  padding: 0;
-}
-.hero-text li {
-  margin: 0.5rem 0;
-}
-button {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  background-color: #275d42;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-.features {
-  display: flex;
-  justify-content: space-around;
+.testimonial {
   background: white;
-  padding: 2rem 1rem;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
-.card {
-  text-align: center;
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1em;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.card img {
-  height: 50px;
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
 }
